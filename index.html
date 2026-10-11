@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction - Colorlib Style</title>
+    <style>
+        /* Global Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: #000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            flex-wrap: wrap;
+        }
+
+        .logo img {
+            height: 35px;
+            display: block;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        nav a:hover, nav a.active {
+            color: #f4b207;
+        }
+
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541888946425-d0fbb18fcd3b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto 25px auto;
+            color: #ddd;
+        }
+
+        .btn {
+            background-color: #f4b207;
+            color: #000;
+            padding: 12px 28px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #d99b04;
+        }
+
+        /* Services Cards Section */
+        .services {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+            color: #111;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-top: 4px solid #f4b207;
+            padding: 30px 20px;
+            width: 300px;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .card-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        .card h3 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            color: #222;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #111;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            color: #fff;
+        }
+
+        .contact form {
+            max-width: 450px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contact input, .contact textarea {
+            padding: 12px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            font-size: 14px;
+            background: #222;
+            color: #fff;
+        }
+
+        .contact textarea {
+            height: 100px;
+        }
+
+        .contact button {
+            background-color: #f4b207;
+            color: #000;
+            padding: 12px;
+            border: none;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #777;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            border-top: 1px solid #222;
+        }
+
+        /* Responsive Mobile Layout */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            nav a {
+                margin: 0 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">
+            <img src="1000033246.png" alt="Construction Logo">
+        </div>
+        <nav>
+            <a href="#" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero">
+        <h1>Quality Construction Services</h1>
+        <p>Expert building solutions, architectural design, structural maintenance, and professional renovations tailored to your requirements.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2 class="section-title">What We Offer</h2>
+        <div class="cards-container">
+            
+            <div class="card">
+                <img src="1000033230.png" alt="Design Icon" class="card-icon">
+                <h3>Architectural Design</h3>
+                <p>Comprehensive layout blueprints, planning, and structural design solutions built for quality standard compliance.</p>
+            </div>
+
+            <div class="card">
+                <img src="1000033229.png" alt="Maintenance Icon" class="card-icon">
+                <h3>Maintenance & Repairs</h3>
+                <p>Reliable structural upkeep, equipment maintenance, and fast repair solutions for homes and buildings.</p>
+            </div>
+
+            <div class="card">
+                <img src="1000033231.png" alt="Renovation Icon" class="card-icon">
+                <h3>Renovation & Finish</h3>
+                <p>High quality interior and exterior painting, surface styling, and modern structural renovation upgrades.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Send Us A Message</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Describe your project..." required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Construction Layout. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
