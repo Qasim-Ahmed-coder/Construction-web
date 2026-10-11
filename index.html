@@ -48,7 +48,7 @@
 
         /* Hero Banner */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1541888946425-d0fbb18fcd3b?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('b1.jpg') center/cover no-repeat;
             color: white;
             text-align: center;
             padding: 90px 20px;
@@ -117,6 +117,7 @@
             width: 50px;
             height: 50px;
             margin-bottom: 20px;
+            object-fit: contain;
         }
 
         .card h3 {
@@ -128,6 +129,35 @@
         .card p {
             font-size: 14px;
             color: #666;
+        }
+
+        /* Portfolio / Projects Gallery Section */
+        .projects {
+            padding: 60px 20px;
+            background: #fff;
+            text-align: center;
+        }
+
+        .projects-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .project-item {
+            width: 320px;
+            height: 220px;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         /* Contact Section */
@@ -200,11 +230,12 @@
     <!-- Header Navigation -->
     <header>
         <div class="logo">
-            <img src="1000033246.png" alt="Construction Logo">
+            <img src="logo.png" alt="Construction Logo">
         </div>
         <nav>
             <a href="#" class="active">Home</a>
             <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -222,23 +253,35 @@
         <div class="cards-container">
             
             <div class="card">
-                <img src="1000033230.png" alt="Design Icon" class="card-icon">
+                <img src="s1.png" alt="Design Icon" class="card-icon">
                 <h3>Architectural Design</h3>
                 <p>Comprehensive layout blueprints, planning, and structural design solutions built for quality standard compliance.</p>
             </div>
 
             <div class="card">
-                <img src="1000033229.png" alt="Maintenance Icon" class="card-icon">
+                <img src="s2.png" alt="Maintenance Icon" class="card-icon">
                 <h3>Maintenance & Repairs</h3>
                 <p>Reliable structural upkeep, equipment maintenance, and fast repair solutions for homes and buildings.</p>
             </div>
 
             <div class="card">
-                <img src="1000033231.png" alt="Renovation Icon" class="card-icon">
+                <img src="s3.png" alt="Renovation Icon" class="card-icon">
                 <h3>Renovation & Finish</h3>
                 <p>High quality interior and exterior painting, surface styling, and modern structural renovation upgrades.</p>
             </div>
 
+        </div>
+    </section>
+
+    <!-- Projects Gallery Section -->
+    <section class="projects" id="projects">
+        <h2 class="section-title">Latest Projects</h2>
+        <div class="projects-grid">
+            <div class="project-item"><img src="b2.jpg" alt="Project 2"></div>
+            <div class="project-item"><img src="b3.jpg" alt="Project 3"></div>
+            <div class="project-item"><img src="b4.jpg" alt="Project 4"></div>
+            <div class="project-item"><img src="b5.jpg" alt="Project 5"></div>
+            <div class="project-item"><img src="b6.jpg" alt="Project 6"></div>
         </div>
     </section>
 
